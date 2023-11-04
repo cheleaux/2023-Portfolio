@@ -8,7 +8,7 @@ export default function resizeTextSection( e ) {
 }
 
 function changeBtnText( btn ){
-    aboutMeText.style.height == '110px' ? btn.innerHTML = 'See more' :
+    aboutMeText.offsetHeight > 110 ? btn.innerHTML = 'See More' :
     btn.innerHTML = 'See Less';
 }
 
