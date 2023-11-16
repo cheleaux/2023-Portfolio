@@ -221,7 +221,7 @@ main {
     justify-content: space-between;
     gap: 100px;
     max-width: 2000px;
-    margin: 0 auto;
+    margin: 0 auto 200px;
 }
 
 .colapse-catch-container {
@@ -257,7 +257,7 @@ main {
 }
 
 .personal-intro .hr {
-    width: 122px;
+    width: 112px;
     height: 17px;
     & hr {
         margin-bottom: -10px;
@@ -270,7 +270,7 @@ main {
     margin: 15px 0 5px 0;
     overflow: hidden;
     transition: ease-in-out 1s ;
-    height: 418px;
+    height: 462px;
     transition: ease-in-out var(--td-tech-stack-conceal) ;
 }
 
@@ -392,7 +392,7 @@ main {
     }
 
     .project-thumbnail img {
-        transform: scale(1.1, 1.1);
+        transform: scale(1.05);
     }
 }
 
@@ -408,12 +408,13 @@ main {
     height: fit-content;
     font-size: var(--fs-160);
     font-weight: var(--fw-subhead);
+    color: var(--clr-main-text);
 }
 
 .info-tag {
     display: inline-block;
     background-color: var(--clr-tag-bg);
-    width: 80px;
+    width: fit-content;
     height: 26px;
     border-radius: 35px;
     font-size: var(--fs-120);
@@ -437,7 +438,7 @@ main {
     width: 85%;
     margin-left: auto;
     transition: ease-in-out var(--td-tech-stack-conceal);
-    height: 290px;
+    height: fit-content;
 }
 
 .tech-list-oncolapse-container:nth-of-type(2) {
