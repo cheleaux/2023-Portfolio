@@ -43,9 +43,9 @@
     --fs-160: 1rem;
     --fs-180: 1.125rem;
     --fs-240: 1.5rem;
-    --fs-375: 2.34375rem;
+    --fs-375: 2.4843rem;
     --fs-660: 4.125rem;
-    --fs-3400: 4.65rem;
+    --fs-3400: 4rem;
 
     /* FONT WEIGHT */
 
@@ -68,7 +68,13 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-    letter-spacing: 0.05rem
+    letter-spacing: 0.05rem;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
 }
   
 *,
@@ -144,7 +150,7 @@ body {
 
 hr {
     margin-inline-end: 0;
-    height: 1px;
+    height:0.063rem;
 }
 
 /* -------------------------------------------------------- HEADER */
@@ -154,21 +160,21 @@ header {
     width: 100%;
     position: relative;
     background-color: var(--clr-head-bg);
-    padding: 9px 0;
-    -webkit-box-shadow: 0px 3px 11px 5px rgba(0,0,0,0.12); 
-    box-shadow: 0px 3px 11px 5px rgba(0,0,0,0.12);
+    padding: 0.563rem 0;
+    -webkit-box-shadow: 0 0.188rem 0.688rem 0.313rem rgba(0,0,0,0.12); 
+    box-shadow: 0 0.188rem 0.688rem 0.313rem rgba(0,0,0,0.12);
 }
 
 header hr {
-    border-top: 1px solid var(--clr-black);
+    border-top: 0.063rem solid var(--clr-black);
 }
 
 .header-container {
-    margin-bottom: -10px;
+    margin-bottom: -0.625rem;
 }
 
 .alias-banner .hr {
-    width: min(72%, 1521px);
+    width: min(70%, 95.063rem);
 }
 
 .alias-banner > hr {
@@ -180,23 +186,23 @@ header hr {
 }
 
 .header-container .hr {
-    margin-top: 15px;
+    margin-top: 0.938rem;
 }
 
 .pronunciation {
-    vertical-align: 6px;
+    vertical-align:0.375rem;
     font-size: var(--fs-140);
     font-weight: var(--fw-reg);
-    margin-left: 12px;
+    margin-left: 0.75rem;
     color: var(--clr-black);
     user-select: none;
 }
 
 .alias-banner {
-    margin-bottom: -5px;
-    width: 440px;
+    margin-bottom: -0.313rem;
+    width: 25rem;
     height: fit-content;
-    gap: 20px;
+    gap: 1.25rem;
     margin: 0 auto;
 }
 
@@ -216,25 +222,25 @@ header hr {
 /* --------------------------------------------------- MAIN CONTENT */
 
 main {
-    padding: 100px 16% ;
+    padding: 6.25rem 16% ;
     flex-direction: row;
     justify-content: space-between;
-    gap: 100px;
-    max-width: 2000px;
-    margin: 0 auto 200px;
+    gap: 6.25rem;
+    max-width: 125rem;
+    margin: 0 auto 12.5rem;
 }
 
 .colapse-catch-container {
     width: 20rem;
+    flex-shrink: 0;
 }
 
 /* ------------------------------------------------- ABOUT ME */
 
 .about-me-section {
-    margin: 24px auto 0 auto;
+    margin: 1.5rem auto 0 auto;
     height: fit-content;
     flex-direction: column;
-
 }
 
 .personal-intro span, .personal-intro h2 {
@@ -244,45 +250,45 @@ main {
 .personal-intro span {
     font-size: var(--fs-140);
     margin-right: auto;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.094rem;
 }
 
 .personal-intro h2 {
     font-size: var(--fs-375);
-    transform: translateX(-2px);
+    transform: translateX(-0.125rem);
     letter-spacing: 0.11719rem;
-    width: 303.5px;
-    height: 51px;
-    margin: 3px 0;
+    width: 303.0.3125rem;
+    height: 3.1875rem;
+    margin: 0.188rem 0;
 }
 
 .personal-intro .hr {
-    width: 112px;
-    height: 17px;
+    width: 7rem;
+    height: 1.063rem;
     & hr {
-        margin-bottom: -10px;
+        margin-bottom: -0.625rem;
     }
 }
 
 #abt-me-text {
     text-align: justify;
     letter-spacing: 1.5;
-    margin: 15px 0 5px 0;
+    margin: 0.938rem 0 0.313rem 0;
     overflow: hidden;
     transition: ease-in-out 1s ;
-    height: 462px;
+    height: 28.875rem;
     transition: ease-in-out var(--td-tech-stack-conceal) ;
 }
 
 #abt-me-text.abt-me-truncated {
-    height: 110px;
+    height: 13.6rem;
 }
 
 .abt-me-expand-btn {
     font-size: var(--fs-120);
     font-weight: var(--fw-subhead);
     width: fit-content;
-    margin: 0 auto 3px auto;
+    margin: 0 auto 0.188rem auto;
     transition: ease-in-out 30ms;
     cursor: pointer;
 }
@@ -292,7 +298,7 @@ main {
 }
 
 .social-links {
-    margin: 20px 0;
+    margin: 1.25rem 0;
     justify-content: space-between;
 }
 
@@ -308,7 +314,7 @@ main {
 .social-links a {
     color: var(--clr-main-text);
     transition: ease-in-out var(--td-hover-anim);
-    height: 60px;
+    height: 3.75rem;
 }
 
 .social-links a:has(span) {
@@ -340,7 +346,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     gap: 5%;
 }
 
@@ -349,9 +355,9 @@ main {
 }
 
 .project-card {
-    width: 350px;
+    width: 21.875rem;
     height: fit-content;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     flex-grow: 1;
     transition: ease-in-out var(--td-hover-anim);
 }
@@ -360,7 +366,7 @@ main {
     background-color: white;
     aspect-ratio: 350/223;
     height: auto;
-    border-radius: 3px;
+    border-radius: 0.188rem;
     overflow: hidden;
     flex-direction: column;
     align-items: center;
@@ -397,10 +403,10 @@ main {
 }
 
 .project-info {
-    height: 30px;
+    height: 1.875rem;
     flex-direction: row;
     align-items: center;
-    margin-top: 5px
+    margin-top: 0.313rem
 }
 
 .project-name {
@@ -415,11 +421,11 @@ main {
     display: inline-block;
     background-color: var(--clr-tag-bg);
     width: fit-content;
-    height: 26px;
-    border-radius: 35px;
+    height: 1.625rem;
+    border-radius: 2.188rem;
     font-size: var(--fs-120);
-    padding: 5px 11px;
-    margin: 0 10px;
+    padding: 0.313rem 0.688rem;
+    margin: 0 0.625rem;
 }
 
 
@@ -428,13 +434,13 @@ main {
 /* ------------------------------------------------- TECH-STACK */
 
 .tech-stack-oncolapse {
-    margin-top: 70px;
+    margin-top: 4.375rem;
     transition: ease-in-out var(--td-tech-stack-conceal);
 }
 
 .tech-list-oncolapse-container {
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 85%;
     margin-left: auto;
     transition: ease-in-out var(--td-tech-stack-conceal);
@@ -442,15 +448,15 @@ main {
 }
 
 .tech-list-oncolapse-container:nth-of-type(2) {
-    height: 210px
+    height: 13.125rem
 }
 
 .tech-list-oncolapse-container.retracted {
-    height: 27px;
+    height: 1.688rem;
 }
 
 .ts-banner {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     margin-left: auto;
     text-align: right;
     position: relative;
@@ -461,7 +467,7 @@ main {
 }
 
 .ts-banner-hr, .ts-banner-hr-cover {
-    transform: translateX(1px);
+    transform: translateX(0.0625rem);
 }
 
 .tech-list-oncolapse-container.retracted .ts-banner-hr {
@@ -532,7 +538,7 @@ main {
 }
 
 .tech-list-oncolapse-container img {
-    height: 41px;
+    height: 2.5625rem;
 }
 
 .tech-list-oncolapse-container i,
@@ -580,12 +586,12 @@ main {
 /* ------------------------------------------------- FOOTER */
 
 footer {
-    margin-top: 1 00px;
+    margin-top: 1 0.0rem;
     width: 100%;
 }
 
 .footer-container {
-    height: 100px;
+    height: 6.25rem;
     align-items: center;
     width: fit-content;
     margin: 0 auto;
@@ -596,51 +602,50 @@ footer {
 
 /* ------------------------------------------------- RESPONSIVITY */
 
-@media ( max-width: 1800px ) {
+@media ( max-width: 112.5rem ) {
     main {
-        padding: 80px 10%;
-        gap: 50px;
+        padding: 5.0rem 10%;
+        gap: 3.125rem;
     }
     
 }
 
-@media ( max-width: 1669px ) {
+@media ( max-width: 104.3125rem ) {
     main {
-        padding: 80px 14%;
+        padding: 5.0rem 14%;
     }
 
 }
 
-@media ( max-width: 1540px ) {
+@media ( max-width: 96.25rem ) {
     
     .projects {
-        width: 550px
+        width: 34.375rem
     }
 
     main {
-        padding: 80px 15%;
+        padding: 5.0rem 15%;
     }
 }
 
-@media ( max-width: 1000px ) {
+@media ( max-width: 62.5rem ) {
     main {
-        padding: 80px 10%;
+        padding: 5.0rem 10%;
     }
 }
 
-@media ( max-width: 884px ) {
+@media ( max-width: 55.25rem ) {
 
     .subtitle {
         font-size: var(--fs-240);
     }
 
     main {
-        padding: 80px 0;
+        padding: 5.0rem 0;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        gap: 100px
-
+        gap: 6.25rem;
     }
 
     main > * {
@@ -649,15 +654,37 @@ footer {
 
     }
 
+    .personal-intro span {
+        margin-right: 0.625rem;
+        text-wrap: nowrap;
+    }
+
+    .personal-intro .hr {
+        margin-left: auto;
+        width: 45%;
+    }
+
+    .personal-intro h2 {
+        font-size: 2.96875rem;
+        height: fit-content;
+    }
+
     .about-me-section {
-        margin-top: 150px;
-        margin-bottom: 250px;
-        width: 18.9rem;
+        width: min( 95%, 43rem);
+    }
+
+    #abt-me-text {
+        height: 23.5rem;
+    }
+
+    #abt-me-text.abt-me-truncated {
+        height: 10.9rem;
     }
 
     .tech-stack-oncolapse {
-        margin-bottom: 100px;
-        min-height: 465px;
+        margin-bottom: 2.25rem;
+        min-height: 29.0625rem;
+        margin-top: 10.125rem;
     }
 
     .ts-subtitle {
@@ -666,9 +693,67 @@ footer {
     
 
     .projects, .colapse-catch-container{
-        width: max( 400px, 70% )
+        width: min( 25.0rem, 80% )
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media ( max-width: 31.25rem ){
+    
+    .personal-intro h2 {
+        font-size: clamp( 9.1718vw, 9.1718vw, 9.5vw );
+    }
+    /* 9.154vw */
+}
+
+@media ( max-width: 28.75rem ){
+
+    #abt-me-text.abt-me-truncated {
+        height: 12.5rem;
+    }
+
+    #abt-me-text {
+        height: 26.125rem;
     }
 
 }
 
+@media ( max-width: 26.5625rem ){
+
+    #abt-me-text {
+        height: 28.9rem;
+    }
+
+    #abt-me-text.abt-me-truncated {
+        height: 13.7rem;
+    }
+
+}
+
+@media ( max-width: 23.625rem ){
+
+    #abt-me-text {
+        height: 29.9rem;
+    }
+
+    #abt-me-text.abt-me-truncated {
+        height: 15rem;
+    }
+
+}
+
+@media ( max-width: 22.25rem ){
+
+    #abt-me-text {
+        height: 36.3rem;
+    }
+
+    #abt-me-text.abt-me-truncated {
+        height: 16.4rem;
+    }
+
+}
 /* ----------------------------- RESPONSIVITY */
