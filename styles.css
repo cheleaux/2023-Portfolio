@@ -3,10 +3,10 @@
 
 @font-face {
     font-family: 'Fasio';
-    src: url('fonts/Fasio/Fasio-Regular.eot');
-    src: url('fonts/Fasio/Fasio-Regular.eot') format('embedded-opentype'),
-         url('fonts/Fasio/Fasio-Regular.woff2') format('woff2'),
+    src: url('fonts/Fasio/Fasio-Regular.woff2');
+    src: url('fonts/Fasio/Fasio-Regular.woff2') format('woff2'),
          url('fonts/Fasio/Fasio-Regular.woff') format('woff'),
+         url('fonts/Fasio/Fasio-Regular.eot') format('embedded-opentype'),
          url("fonts/Fasio/Fasio-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -173,20 +173,28 @@ header hr {
     margin-bottom: -0.625rem;
 }
 
+.alias-banner {
+    margin-bottom: -0.313rem;
+    width: 25rem;
+    height: fit-content;
+    gap: 1.25rem;
+    margin: 0 auto;
+}
+
+.alias-banner .hr-container {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
 .alias-banner .hr {
     width: min(70%, 95.063rem);
 }
 
 .alias-banner > hr {
     width: 100%;
-}
-
-.alias-banner > hr {
     margin-right: 0;
-}
-
-.header-container .hr {
-    margin-top: 0.938rem;
 }
 
 .pronunciation {
@@ -196,14 +204,7 @@ header hr {
     margin-left: 0.75rem;
     color: var(--clr-black);
     user-select: none;
-}
-
-.alias-banner {
-    margin-bottom: -0.313rem;
-    width: 25rem;
-    height: fit-content;
-    gap: 1.25rem;
-    margin: 0 auto;
+    text-wrap: nowrap;
 }
 
 .alias {
@@ -251,6 +252,7 @@ main {
     font-size: var(--fs-140);
     margin-right: auto;
     letter-spacing: 0.094rem;
+    text-wrap: nowrap;
 }
 
 .personal-intro h2 {
@@ -447,12 +449,20 @@ main {
     height: fit-content;
 }
 
+.tech-list-oncolapse-container:first-of-type {
+    height: 21.875rem
+}
+
 .tech-list-oncolapse-container:nth-of-type(2) {
     height: 13.125rem
 }
 
 .tech-list-oncolapse-container.retracted {
     height: 1.688rem;
+}
+
+.tech-list-oncolapse-container.retracted .tech-list {
+    display: none;
 }
 
 .ts-banner {
@@ -651,8 +661,21 @@ footer {
     main > * {
         margin-right: auto;
         margin-left: auto;
-
     }
+
+    .alias-banner {
+        width: min(90%, 25rem);
+    }
+
+    .alias {
+        width: 100%;
+        aspect-ratio: 400/47;
+    }
+
+    .pronunciation {
+        margin-left: 1rem; 
+    }
+
 
     .personal-intro span {
         margin-right: 0.625rem;
@@ -661,7 +684,7 @@ footer {
 
     .personal-intro .hr {
         margin-left: auto;
-        width: 45%;
+        width: 100%;
     }
 
     .personal-intro h2 {
@@ -706,7 +729,7 @@ footer {
     .personal-intro h2 {
         font-size: clamp( 9.1718vw, 9.1718vw, 9.5vw );
     }
-    /* 9.154vw */
+
 }
 
 @media ( max-width: 28.75rem ){
@@ -719,6 +742,9 @@ footer {
         height: 26.125rem;
     }
 
+    .alias {
+        font-size: 13.5vw;
+    }
 }
 
 @media ( max-width: 26.5625rem ){
@@ -734,6 +760,10 @@ footer {
 }
 
 @media ( max-width: 23.625rem ){
+
+    .alias {
+        font-size: 12.4vw;
+    }
 
     #abt-me-text {
         height: 29.9rem;
