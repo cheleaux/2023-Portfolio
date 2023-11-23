@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'Fasio';
-    src: url('../Portfolio-2023/assets/fonts/Fasio/Fasio-Regular.otf');
-    src: url('../Portfolio-2023/assets/fonts/Fasio/Fasio-Regular.otf') format('opentype'),
-         url('../Portfolio-2023/assets/fonts/Fasio/Fasio-Regular.woff2') format('woff2'),
-         url('../Portfolio-2023/assets/fonts/Fasio/Fasio-Regular.woff') format('woff'),
-         url("../Portfolio-2023/assets/fonts/Fasio/Fasio-Regular.ttf") format('truetype');
+    src: url('../Portfolio-2023/css/fonts/Fasio/Fasio-Regular.otf');
+    src: url('../Portfolio-2023/css/fonts/Fasio/Fasio-Regular.otf') format('opentype'),
+         url('../Portfolio-2023/css/fonts/Fasio/Fasio-Regular.woff2') format('woff2'),
+         url('../Portfolio-2023/css/fonts/Fasio/Fasio-Regular.woff') format('woff'),
+         url("../Portfolio-2023/css/fonts/Fasio/Fasio-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
